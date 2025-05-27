@@ -13,7 +13,7 @@
       "name": "Apache 2.0",
       "url": "https://www.apache.org/licenses/LICENSE-2.0.html"
     },
-    "x-generation-date": "2025-05-13T17:14:57.988Z"
+    "x-generation-date": "2025-05-27T15:59:58.804Z"
   },
   "openAPI": {
     "components": {},
@@ -3263,7 +3263,8 @@
           "data": {
             "required": [
               "videoUrl",
-              "gridRows"
+              "gridRows",
+              "videoGridOrder"
             ],
             "type": "object",
             "properties": {
@@ -3302,6 +3303,9 @@
                 "type": "integer"
               },
               "gridCols": {
+                "type": "integer"
+              },
+              "videoGridOrder": {
                 "type": "integer"
               },
               "locale": {
@@ -3364,7 +3368,8 @@
         "type": "object",
         "required": [
           "videoUrl",
-          "gridRows"
+          "gridRows",
+          "videoGridOrder"
         ],
         "properties": {
           "id": {
@@ -4115,6 +4120,9 @@
           "gridCols": {
             "type": "integer"
           },
+          "videoGridOrder": {
+            "type": "integer"
+          },
           "createdAt": {
             "type": "string",
             "format": "date-time"
@@ -4434,6 +4442,9 @@
                   "type": "integer"
                 },
                 "gridCols": {
+                  "type": "integer"
+                },
+                "videoGridOrder": {
                   "type": "integer"
                 },
                 "createdAt": {

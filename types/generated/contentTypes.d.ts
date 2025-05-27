@@ -400,6 +400,7 @@ export interface ApiFaviconFavicon extends Struct.SingleTypeSchema {
 export interface ApiVideoGridVideoGrid extends Struct.CollectionTypeSchema {
   collectionName: 'video_grids';
   info: {
+    description: '';
     displayName: 'video-grid';
     pluralName: 'video-grids';
     singularName: 'video-grid';
@@ -473,6 +474,20 @@ export interface ApiVideoGridVideoGrid extends Struct.CollectionTypeSchema {
     updatedAt: Schema.Attribute.DateTime;
     updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
       Schema.Attribute.Private;
+    videoGridOrder: Schema.Attribute.Integer &
+      Schema.Attribute.Required &
+      Schema.Attribute.Unique &
+      Schema.Attribute.SetPluginOptions<{
+        i18n: {
+          localized: true;
+        };
+      }> &
+      Schema.Attribute.SetMinMax<
+        {
+          min: 1;
+        },
+        number
+      >;
     videoUrl: Schema.Attribute.Media<'files' | 'videos'> &
       Schema.Attribute.Required &
       Schema.Attribute.SetPluginOptions<{

@@ -4,7 +4,8 @@
   "info": {
     "singularName": "video-grid",
     "pluralName": "video-grids",
-    "displayName": "video-grid"
+    "displayName": "video-grid",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
@@ -32,14 +33,15 @@
       "type": "richtext"
     },
     "thumbnail": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
       "allowedTypes": [
         "images",
         "files",
         "videos",
         "audios"
       ],
-      "type": "media",
-      "multiple": false,
       "pluginOptions": {
         "i18n": {
           "localized": true
@@ -47,18 +49,18 @@
       }
     },
     "videoUrl": {
+      "type": "media",
+      "multiple": false,
+      "required": true,
       "allowedTypes": [
         "files",
         "videos"
       ],
-      "type": "media",
-      "multiple": false,
       "pluginOptions": {
         "i18n": {
           "localized": true
         }
-      },
-      "required": true
+      }
     },
     "slug": {
       "pluginOptions": {
@@ -88,6 +90,17 @@
       },
       "type": "integer",
       "default": 3
+    },
+    "videoGridOrder": {
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "type": "integer",
+      "required": true,
+      "min": 1,
+      "unique": true
     }
   }
 }

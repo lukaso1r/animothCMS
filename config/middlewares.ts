@@ -19,7 +19,7 @@ module.exports = ({ env }) =>[
             "blob:",
             "https://market-assets.strapi.io",
             "https://cdn.animoth.com",
-            "https://deba98162f1dbedff55404afd9bc78a7.r2.cloudflarestorage.com",
+            env("R2_ENDPOINT") ? env("R2_ENDPOINT").replace(/^https?:\/\//, "") : "",
             env("CF_PUBLIC_ACCESS_URL")
               ? env("CF_PUBLIC_ACCESS_URL").replace(/^https?:\/\//, "")
               : "",
@@ -28,7 +28,7 @@ module.exports = ({ env }) =>[
               "'self'", 
               "blob:", 
               "https://cdn.animoth.com", 
-              "https://deba98162f1dbedff55404afd9bc78a7.r2.cloudflarestorage.com",
+              env("R2_ENDPOINT") ? env("R2_ENDPOINT").replace(/^https?:\/\//, "") : "",
               env("CF_PUBLIC_ACCESS_URL")
                 ? env("CF_PUBLIC_ACCESS_URL").replace(/^https?:\/\//, "")
                 : "",
