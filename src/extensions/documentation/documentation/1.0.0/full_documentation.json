@@ -13,7 +13,7 @@
       "name": "Apache 2.0",
       "url": "https://www.apache.org/licenses/LICENSE-2.0.html"
     },
-    "x-generation-date": "2025-05-27T16:17:51.253Z"
+    "x-generation-date": "2025-05-29T10:43:43.492Z"
   },
   "openAPI": {
     "components": {},
@@ -3271,9 +3271,6 @@
               "title": {
                 "type": "string"
               },
-              "description": {
-                "type": "string"
-              },
               "thumbnail": {
                 "oneOf": [
                   {
@@ -3307,6 +3304,17 @@
               },
               "videoGridOrder": {
                 "type": "integer"
+              },
+              "Description": {},
+              "Logline": {},
+              "time": {
+                "type": "string"
+              },
+              "director": {
+                "type": "string"
+              },
+              "year": {
+                "type": "string"
               },
               "locale": {
                 "type": "string"
@@ -3379,9 +3387,6 @@
             "type": "string"
           },
           "title": {
-            "type": "string"
-          },
-          "description": {
             "type": "string"
           },
           "thumbnail": {
@@ -4123,6 +4128,17 @@
           "videoGridOrder": {
             "type": "integer"
           },
+          "Description": {},
+          "Logline": {},
+          "time": {
+            "type": "string"
+          },
+          "director": {
+            "type": "string"
+          },
+          "year": {
+            "type": "string"
+          },
           "createdAt": {
             "type": "string",
             "format": "date-time"
@@ -4172,9 +4188,6 @@
                   "type": "string"
                 },
                 "title": {
-                  "type": "string"
-                },
-                "description": {
                   "type": "string"
                 },
                 "thumbnail": {
@@ -4446,6 +4459,17 @@
                 },
                 "videoGridOrder": {
                   "type": "integer"
+                },
+                "Description": {},
+                "Logline": {},
+                "time": {
+                  "type": "string"
+                },
+                "director": {
+                  "type": "string"
+                },
+                "year": {
+                  "type": "string"
                 },
                 "createdAt": {
                   "type": "string",
